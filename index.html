@@ -16,12 +16,13 @@
           <p>Clear All</p>
         </a>
       </header>
-      <form action="#">
+      <form data-form action="#">
+        
         <label >
           <span class="sameStyle">Mortgage Amount</span>
           <div class="inputContainer">
-            <p>E</p>
-            <input type="number" min="1">
+            <p>&euro;</p>
+            <input data-mortageAmount type="number" min="1" required>
           </div>
         </label>
 
@@ -29,14 +30,14 @@
           <label >
             <span class="sameStyle">Mortgage Term</span>
             <div class="inputContainer">
-              <input type="number" min="1">
+              <input type="number" min="1"  required>
               <p>years</p>
             </div>
           </label>
           <label >
             <span class="sameStyle">Interest Rate</span>
             <div class="inputContainer">
-              <input type="number" min="1">
+              <input type="number" min="1"  required>
               <p>%</p>
             </div>
           </label>
@@ -46,17 +47,17 @@
           <span class="sameStyle">Mortgage Type</span>
           <div class="repayInterest">
             <label for="MortgageType" class="MortgageType">
-              <input type="radio" name="MortgageType">
+              <input type="radio" name="MortgageType" id="MortgageType">
               <span>Repayment</span>
             </label>
             <label for="MortgageType" class="MortgageType">
-              <input type="radio" name="MortgageType">
+              <input type="radio" name="MortgageType" id="MortgageType">
               <span>Interest Only</span>
             </label>
           </div>
-          
         </label>
-        <button>Calculate Repayments</button>
+
+        <button data-submit >Calculate Repayments</button>
       </form>
     </section>
     
@@ -71,10 +72,10 @@
         <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
         <div class="results">
           <p>Your monthly repayments</p>
-          <p id="repayment" data-monthlyRepayment>E1,797.74</p>
+          <p id="repayment" data-monthlyRepayment>&euro;1,797.74</p>
           <hr>
           <p>Total you'll repay over the term</p>
-          <p id="totalRepay" data-totalPayment>E123,456</p>
+          <p id="totalRepay" data-totalPayment>&euro;123,456</p>
         </div>
       </div>
     </section>
@@ -83,5 +84,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
