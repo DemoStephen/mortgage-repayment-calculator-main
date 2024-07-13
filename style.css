@@ -56,6 +56,9 @@ form{
     display: flex;
     gap: 1rem;
 }
+.termAndRate label{
+    width: 100%;
+}
 .repayInterest{
     display: flex;
     flex-direction: column;
