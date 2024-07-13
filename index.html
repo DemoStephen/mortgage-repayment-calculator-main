@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 </head>
+
 <body>
   <main>
     <section>
@@ -16,8 +17,8 @@
           <p>Clear All</p>
         </a>
       </header>
+      
       <form data-form action="#">
-        
         <label >
           <span class="sameStyle">Mortgage Amount</span>
           <div class="inputContainer">
@@ -57,7 +58,10 @@
           </div>
         </label>
 
-        <button>Calculate Repayments</button>
+        <button>
+          <img src="./assets/images/icon-calculator.svg" alt="calculator">
+          <span>Calculate Repayments</span>
+        </button>
       </form>
     </section>
     
@@ -67,6 +71,7 @@
         <h2>Results shown here</h2>
         <p> Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
       </div>
+
       <div data-compleatedResult class="formFilled  d-none">
         <h2>Your results</h2>
         <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
@@ -80,10 +85,11 @@
       </div>
     </section>
   </main>
+
   <div class="attribution ">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Adewale Stephen</a>.
   </div>
-  <script src="main.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

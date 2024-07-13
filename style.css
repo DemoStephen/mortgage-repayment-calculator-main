@@ -3,7 +3,9 @@
     src: url('./assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf');
 }
   
-*,*::before,*::after{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +13,7 @@
 body{
     font-family: "Plus Jakarta Sans";
     font-optical-sizing: auto;
+    font-size: 1rem;
     background-color: hsl(202, 86%, 94%);
     display: flex;
     flex-direction: column;
@@ -18,7 +21,6 @@ body{
     align-content: center;
     align-items: center;
     min-height: 100vh;
-    font-size: 1rem;
 }
 main{
     width: min(60%, 100% - 40px);
@@ -32,7 +34,7 @@ main{
 
 main section{
     padding: 2rem;
-    width: 50%;
+    width: 100%;
 }
 main section header{
     display: flex;
@@ -97,6 +99,11 @@ form button{
     border: none;
     border-radius: 2rem;
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.4rem;
 }
 .paleBg{
     background-color: hsl(202, 55%, 16%);
@@ -153,8 +160,16 @@ a{
 button{
     cursor: pointer;
 }
-.attribution { font-size: 11px; text-align: center; margin: 0.5rem 0; color: #0d1e26}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 0.5rem 0; 
+    color: #0d1e26
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 @media (width < 940px){
     main{
         width: 100%;
@@ -164,7 +179,6 @@ button{
     }
     main section{
         padding: 1rem;
-        width: 100%;
     }
     .paleBg{
         border-radius: unset;
