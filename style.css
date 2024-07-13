@@ -15,7 +15,7 @@ body{
     font-size: 1rem;
 }
 main{
-    width: 60%;
+    width: min(60%, 100% - 40px);
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0 10px hsla(203, 41%, 72%, 0.532);
