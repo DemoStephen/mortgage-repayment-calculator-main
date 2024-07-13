@@ -12,7 +12,7 @@
     <section>
       <header>
         <h1>Mortgage Calculator</h1>
-        <a href="#">
+        <a data-reset href="#">
           <p>Clear All</p>
         </a>
       </header>
@@ -30,14 +30,14 @@
           <label >
             <span class="sameStyle">Mortgage Term</span>
             <div class="inputContainer">
-              <input type="number" min="1"  required>
+              <input data-mortageTerm type="number" min="1"  required>
               <p>years</p>
             </div>
           </label>
           <label >
             <span class="sameStyle">Interest Rate</span>
             <div class="inputContainer">
-              <input type="number" min="1"  required>
+              <input data-mortageInterest type="number" min="1"  required>
               <p>%</p>
             </div>
           </label>
@@ -47,17 +47,17 @@
           <span class="sameStyle">Mortgage Type</span>
           <div class="repayInterest">
             <label for="MortgageType" class="MortgageType">
-              <input type="radio" name="MortgageType" id="MortgageType">
+              <input data-mortageTypeRepayment type="radio" name="MortgageType" id="MortgageType">
               <span>Repayment</span>
             </label>
             <label for="MortgageType" class="MortgageType">
-              <input type="radio" name="MortgageType" id="MortgageType">
+              <input data-mortageTypeInterest type="radio" name="MortgageType" id="MortgageType">
               <span>Interest Only</span>
             </label>
           </div>
         </label>
 
-        <button data-submit >Calculate Repayments</button>
+        <button>Calculate Repayments</button>
       </form>
     </section>
     
@@ -80,9 +80,9 @@
       </div>
     </section>
   </main>
-  <div class="attribution d-none">
+  <div class="attribution ">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Adewale Stephen</a>.
   </div>
   <script src="main.js"></script>
 </body>
