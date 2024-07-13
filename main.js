@@ -22,8 +22,7 @@ formTag.addEventListener('submit', (event)=>{
     if(mortageTypeInterest.checked){
         outputMonthlyRepayment.innerText = `\u20AC ${monthlyInterst}`
         outputTotalRepayment.innerText = `\u20AC ${totalYearlyInterest}`
-    }
-    return
+    }return
 })
 resetForm.addEventListener('click', (event)=>{
     event.preventDefault();
