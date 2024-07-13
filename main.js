@@ -3,13 +3,32 @@ const formTag = document.querySelector('[data-form]');
 const mortageAmount = document.querySelector('[data-mortageAmount]');
 const mortageTerm = document.querySelector('[data-mortageTerm]');
 const mortageInterest = document.querySelector('[data-mortageInterest]');
-const mortageTypeInterest = document.querySelector('[data-mortageTypeRepayment]');
-const mortageTypeRepayment = document.querySelector('[data-mortageTypeInterest]');
+const mortageTypeInterest = document.querySelector('[data-mortageTypeInterest]');
+const mortageTypeRepayment = document.querySelector('[data-mortageTypeRepayment]');
 
 const outputMonthlyRepayment = document.querySelector('[data-monthlyRepayment]');
 const outputTotalRepayment = document.querySelector('[data-totalPayment]');
 
 formTag.addEventListener('submit', (event)=>{
     event.preventDefault();
-    console.log(`${mortageAmount.value} ${mortageTerm.value} ${mortageInterest.value}`)
+    const yearlyInterest = ((parseInt(mortageAmount.value) * parseInt(mortageInterest.value))/100).toFixed(2);
+    const totalYearlyInterest = (yearlyInterest*mortageTerm.value).toFixed(2);
+    const monthlyInterst = (yearlyInterest/12).toFixed(2);
+    const totalYearlyRepayment = (parseInt(mortageAmount.value) + (yearlyInterest * parseInt(mortageTerm.value))).toFixed(2);
+    const monthlyRepayment = (parseInt(totalYearlyRepayment)/12).toFixed(2);
+    // console.log(monthlyRepayment)
+    // console.log(totalYearlyRepayment)
+    if(mortageTypeRepayment.checked){
+        outputMonthlyRepayment.innerText = `\u20AC ${monthlyRepayment}`
+        outputTotalRepayment.innerText = `\u20AC ${totalYearlyRepayment}`
+    }
+    if(mortageTypeInterest.checked){
+        outputMonthlyRepayment.innerText = `\u20AC ${monthlyInterst}`
+        outputTotalRepayment.innerText = `\u20AC ${totalYearlyInterest}`
+    }
 });
+
+resetForm.addEventListener('click', (event)=>{
+    event.preventDefault();
+    formTag.reset();
+})
