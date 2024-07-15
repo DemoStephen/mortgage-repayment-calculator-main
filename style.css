@@ -170,7 +170,7 @@ button{
     color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width < 940px){
+@media (width < 940px){
     main{
         width: 100%;
         min-height: 100vh;
