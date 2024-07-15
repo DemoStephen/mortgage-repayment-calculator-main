@@ -19,12 +19,12 @@ formTag.addEventListener('submit', (event)=>{
     const totalYearlyRepayment = (parseInt(mortageAmount.value) + parseInt(totalYearlyInterest)).toFixed(2)
     const monthlyRepayment = (parseInt(totalYearlyRepayment)/12).toFixed(2)
     if(mortageTypeRepayment.checked){
-        outputMonthlyRepayment.innerText = `\u20AC ${monthlyRepayment}`
-        outputTotalRepayment.innerText = `\u20AC ${totalYearlyRepayment}`
+        outputMonthlyRepayment.innerText = `₦ ${monthlyRepayment}`
+        outputTotalRepayment.innerText = `₦ ${totalYearlyRepayment}`
     }
     else if(mortageTypeInterest.checked){
-        outputMonthlyRepayment.innerText = `\u20AC ${monthlyInterst}`
-        outputTotalRepayment.innerText = `\u20AC ${totalYearlyInterest}`
+        outputMonthlyRepayment.innerText = `₦ ${monthlyInterst}`
+        outputTotalRepayment.innerText = `₦ ${totalYearlyInterest}`
     }
     empty.classList.add('d-none');
     complete.classList.remove('d-none');

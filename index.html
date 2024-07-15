@@ -20,16 +20,16 @@
       
       <form data-form action="#">
         <label >
-          <span class="sameStyle">Mortgage Amount</span>
+          <span class="sameStyle">Loan Amount</span>
           <div class="inputContainer">
-            <p>&euro;</p>
+            <p>&#8358;</p>
             <input data-mortageAmount type="number" min="1" required>
           </div>
         </label>
 
         <div class="termAndRate">
           <label >
-            <span class="sameStyle">Mortgage Term</span>
+            <span class="sameStyle">Loan Term</span>
             <div class="inputContainer">
               <input data-mortageTerm type="number" min="1" max="100" required>
               <p>years</p>
@@ -45,7 +45,7 @@
         </div>
 
         <label class="MortgageTypeParent">
-          <span class="sameStyle">Mortgage Type</span>
+          <span class="sameStyle">Loan Type</span>
           <div class="repayInterest">
             <label for="MortgageType" class="MortgageType">
               <input data-mortageTypeRepayment type="radio" name="MortgageType" id="MortgageType" required>
@@ -70,6 +70,10 @@
         <img src="./assets/images/illustration-empty.svg" alt="Empty">
         <h2>Results shown here</h2>
         <p> Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        <div class="attribution ">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+          Coded by <a href="#">Adewale Stephen</a>.
+        </div>
       </div>
 
       <div data-compleatedResult class="formFilled  d-none">
@@ -77,19 +81,18 @@
         <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
         <div class="results">
           <p>Your monthly repayments</p>
-          <p id="repayment" data-monthlyRepayment>&euro;0.00</p>
+          <p id="repayment" data-monthlyRepayment>&#8358;0.00</p>
           <hr>
           <p>Total you'll repay over the term</p>
-          <p id="totalRepay" data-totalPayment>&euro;0.00</p>
+          <p id="totalRepay" data-totalPayment>&#8358;0.00</p>
+        </div>
+        <div class="attribution ">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+          Coded by <a href="https://web.facebook.com/codewithstephen">Adewale Stephen</a>.
         </div>
       </div>
     </section>
   </main>
-
-  <div class="attribution ">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Adewale Stephen</a>.
-  </div>
   <script src="./main.js"></script>
 </body>
 </html>
