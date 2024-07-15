@@ -34,7 +34,7 @@ main{
 
 main section{
     padding: 2rem;
-    width: 100%;
+    width: 50%;
 }
 main section header{
     display: flex;
@@ -182,6 +182,7 @@ button{
     }
     main section{
         padding: 1.2rem 1rem;
+        width: 100%;
     }
     .paleBg{
         border-radius: unset;
