@@ -30,7 +30,6 @@ formTag.addEventListener('submit', (event)=>{
     complete.classList.remove('d-none');
     return;
 })
-
 resetForm.addEventListener('click', (event)=>{
     event.preventDefault();
     formTag.reset();
